@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  /**********Datepicker***********/
   var dateToday = new Date();
   var dates = $("#from").datepicker({
     minDate: dateToday,
