@@ -152,3 +152,42 @@
     pointer-events:none;
  }
 
+/***********Ripple effect**************/
+.slick-arrow{
+    width: 46px;
+  height: 46px;
+  background-color: #FF6F00;
+  background-position: center;
+  border-radius: 50%;
+  color: transparent;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+border: none;
+-webkit-box-shadow: 0 0 4px #999;
+        box-shadow: 0 0 4px #999;
+outline: none;
+background-position: center;
+-webkit-transition: all 0.8s ease;
+-o-transition: all 0.8s ease;
+transition: all 0.8s ease;
+}
+
+.ripple:hover {
+    background: #FF6F00 -o-radial-gradient(circle, transparent 1%, #FF6F00 1%) center/15000%;
+    background: #FF6F00 radial-gradient(circle, transparent 1%, #FF6F00 1%) center/15000%;
+  }
+
+.slick-arrow:active {
+    background-image: -o-radial-gradient(rgb(220, 104, 36), #643567, #211d92);
+    background-image: radial-gradient(rgb(220, 104, 36), #643567, #211d92);
+background-size: 100%;
+}
+  
+.slick-prev:active{
+    background-position: left;
+}
+
+.slick-next:active{
+    background-position: right;
+}
