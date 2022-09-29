@@ -9,10 +9,6 @@ $(document).ready(function () {
     pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 9999,
-        settings: "unslick",
-      },
-      {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
