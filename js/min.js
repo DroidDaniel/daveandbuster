@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  window.onresize = triggerSlider;
-  function triggerSlider() {
+  window.onresize = triggerSlideronResize;
+  function slider() {
     $(".gallery-photo-slider")
       .not(".slick-initialized")
       .slick({
@@ -25,4 +25,8 @@ $(document).ready(function () {
         ],
       });
   }
+  function triggerSlideronResize() {
+    slider();
+  }
+  slider();
 });
