@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Photo Gallery</title>
+    <title>Video Info</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
   </head>
   <body>
-    <div class="gallery_section">
-      <div class="gallery_header">
-        <p class="gallery_title">HEADLINE FOR PHOTO GALLERY OF GAMES AT SELECTED LOCATION</p>
-        <p class="gallery_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <section class="video_stripe">
+      <div class="video_stripe__wrapper">
+        <div class="video_stripe__info video_stripe__info_container">
+          <div class="video_stripe__thumbnail">
+            <a href="https://www.youtube.com/watch?v=CR0WdDeZI54" target="_blank">
+              <div class="video_stripe__thumbnail_border"></div>
+              <div class="video_stripe__thumbnail_icon">
+                <img src="images/youtube.png" alt="youtube-icon" class="video_stripe__thumbnail_icon_img">
+              </div>
+              <img src="images/thumbnail.png" alt="thumbnail" class="video_stripe__thumbnail_img">
+            </a>
+          </div>
+          <div class="video_stripe__content">
+            <div class="video_stripe__content_header">
+              <p class="video_stripe__content_title">WHAT WORKERS HAVE TO SAY TITLE</p>
+              <p class="video_stripe__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+          </div>
+        </div>
+        <div class="video_stripe__info video_stripe__info_container video_stripe__info_even_position">
+          <div class="video_stripe__content">
+            <div class="video_stripe__content_header">
+              <p class="video_stripe__content_title">WHAT WORKERS HAVE TO SAY TITLE</p>
+              <p class="video_stripe__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+          </div>
+          <div class="video_stripe__thumbnail">
+            <a href="https://www.youtube.com/watch?v=CR0WdDeZI54" target="_blank">
+              <div class="video_stripe__thumbnail_border"></div>
+              <div class="video_stripe__thumbnail_icon">
+                <img src="images/youtube.png" alt="youtube-icon" class="video_stripe__thumbnail_icon_img">
+              </div>
+              <img src="images/thumbnail.png" alt="thumbnail" class="video_stripe__thumbnail_img">
+            </a>
+          </div>
+        </div>
+        <div class="video_stripe__info video_stripe__info_container">
+          <div class="video_stripe__thumbnail">
+            <a href="https://www.youtube.com/watch?v=CR0WdDeZI54" target="_blank">
+              <div class="video_stripe__thumbnail_border"></div>
+              <div class="video_stripe__thumbnail_icon">
+                <img src="images/youtube.png" alt="youtube-icon" class="video_stripe__thumbnail_icon_img">
+              </div>
+              <img src="images/thumbnail.png" alt="thumbnail" class="video_stripe__thumbnail_img">
+            </a>
+          </div>
+          <div class="video_stripe__content">
+            <div class="video_stripe__content_header">
+              <p class="video_stripe__content_title">WHAT WORKERS HAVE TO SAY TITLE</p>
+              <p class="video_stripe__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="grid_gallery gallery-photo-slider">
-      <div class="grid_gallery_photo_container">
-        <img src="images/gallery-img-1.png" alt="gallery-photo">
-      </div>
-      <div class="grid_gallery_photo_container">
-        <img src="images/gallery-img-2.png" alt="gallery-photo" class="grid_gallery_img">
-      </div>
-      <div class="grid_gallery_photo_container">
-        <img src="images/gallery-img-3.png" alt="gallery-photo" class="grid_gallery_img">
-      </div>
-      <div class="grid_gallery_photo_container">
-        <img src="images/gallery-img-4.png" alt="gallery-photo" class="grid_gallery_img">
-      </div>
-      <div class="grid_gallery_photo_container">
-        <img src="images/gallery-img-5.png" alt="gallery-photo" class="grid_gallery_img">
-      </div>
-    </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="js/min.js"></script>
   </body>
 </html>
