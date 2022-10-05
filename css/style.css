@@ -220,6 +220,12 @@ transition: all .3s ease;
   text-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width:600px) {
+  .video_modal_container .close_video_btn{
+    right: 20px;
+  }
+}
+
 .video_modal_container video{
   width: 90%;
   max-width: 800px;
