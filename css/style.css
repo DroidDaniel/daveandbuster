@@ -205,12 +205,15 @@ transition: all .3s ease;
 
 .video_modal__source{
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .video_modal_container .close_video_btn{
   position: absolute;
   top: -30px;
-  right: 80px;
+  right: 40px;
   font-size: 20px;
   cursor: pointer;
   color: #fff;
