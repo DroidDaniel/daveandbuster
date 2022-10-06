@@ -1,7 +1,7 @@
 $(document).ready(function () {
   window.onresize = triggerSlideronResize;
   function slider() {
-    $(".gallery-photo-slider")
+    $(".feature-post-slider")
       .not(".slick-initialized")
       .slick({
         slidesToShow: 1,
@@ -17,7 +17,13 @@ $(document).ready(function () {
             settings: "unslick",
           },
           {
-            breakpoint: 601,
+            breakpoint: 993,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 600,
             settings: {
               slidesToShow: 1,
             },
