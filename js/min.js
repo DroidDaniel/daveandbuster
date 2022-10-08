@@ -14,11 +14,11 @@ $(document).ready(function () {
     pauseOnDotsHover: false,
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 769,
         settings: {
           slidesToShow: 1,
-          centerMode: true,
-          centerPadding: "15%",
+          centerMode: false,
+          centerPadding: "0%",
         },
       },
     ],
