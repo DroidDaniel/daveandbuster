@@ -163,7 +163,7 @@ background: transparent;
 @media screen and (max-width:768px) {
   .slick-prev{
     top: inherit;
-    bottom: -36px;
+    bottom: -50px;
     left: 35%;
     position: absolute;
     background-image: url('../images/prev-icon.png');
@@ -184,7 +184,7 @@ background: transparent;
 @media screen and (max-width:768px) {
   .slick-next{
     top: inherit;
-    bottom: -36px;
+    bottom: -50px;
     left: 50%;
   }
 }
