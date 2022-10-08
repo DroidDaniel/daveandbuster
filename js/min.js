@@ -15,14 +15,6 @@ $(document).ready(function () {
           centerPadding: "15%",
         },
       },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-          centerPadding: "10%",
-        },
-      },
     ],
   });
 });
