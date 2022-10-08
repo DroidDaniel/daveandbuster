@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  $(".message_slider").slick({
-    autoplay: false,
+  $(".testimonial__slider").slick({
+    autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
     dots: false,
@@ -9,9 +9,6 @@ $(document).ready(function () {
     slidesToShow: 1,
     centerMode: true,
     centerPadding: "25%",
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    pauseOnDotsHover: false,
     responsive: [
       {
         breakpoint: 769,

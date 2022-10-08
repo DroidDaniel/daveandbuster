@@ -5,14 +5,14 @@
 }
 
 /*******How we do Section*******/
-.message_container {
+.testimonial__container {
 font-family:Arial;
 width:100%;
 display:block;
 margin:0 auto;
 }
 
-.message_container_title{
+.testimonial__container_title{
 font-size: 45px;
 line-height: 1.2;
 color: #15189A;
@@ -22,16 +22,16 @@ padding: 30px 0;
 }
 
 @media screen and (max-width:600px) {
-.message_container_title{
+.testimonial__container_title{
   font-size: 32px;
 }
 }
 
-.message_info{
+.testimonial__info{
 padding:30px 0 20px 0;
 }
 
-.message_info__detail{
+.testimonial__info__detail{
   display: flex;
   align-items: top;
 max-width: 100%;
@@ -45,7 +45,7 @@ border: solid 1px #15189A;
 
 
 @media screen and (max-width:768px) {
-.message_info__detail{
+.testimonial__info__detail{
   max-width: 300px;
   margin: 0 auto;
   padding: 20px;
@@ -57,7 +57,7 @@ border: solid 1px #15189A;
 }
 
 @media screen and (max-width:380px) {
-  .message_info__detail{
+  .testimonial__info__detail{
     max-width: 250px;
     padding: 15px;
   }
@@ -88,7 +88,7 @@ border: solid 1px #15189A;
   }
 }
 
-.message_quotation_icon{
+.testimonial__quotation_icon{
   position: absolute;
   top: 27px;
   left: 110px;
@@ -96,14 +96,14 @@ border: solid 1px #15189A;
 }
 
 @media screen and (max-width:600px) {
-  .message_quotation_icon{
+  .testimonial__quotation_icon{
     top: 30px;
     left: 96px;
   }
 }
 
 @media screen and (max-width:380px) {
-  .message_quotation_icon{
+  .testimonial__quotation_icon{
     top: 22px;
     left: 70px;
   }
@@ -115,17 +115,17 @@ border: solid 1px #15189A;
 }
 
 
-.message_description{
+.testimonial__description{
 margin: 10px 0;
 }
 
 
-.slick-current.slick-active .message_info__detail {
+.slick-current.slick-active .testimonial__info__detail {
   background-color: #15189A;
 }
 
-.slick-current.slick-active .message_description,
-.slick-current.slick-active .messenger_name,
+.slick-current.slick-active .testimonial__description,
+.slick-current.slick-active .testimonial__name,
 .slick-current.slick-active .testimonial_title,
 .slick-current.slick-active .testimonial_stars{
   color: #fff;
@@ -195,7 +195,7 @@ background: transparent;
   pointer-events:none;
 }
 
-.message_description{
+.testimonial__description{
 font-size: 12px;
 line-height: 22px;
 color: #15189A;
@@ -203,7 +203,7 @@ color: #15189A;
 
 
 @media screen and (max-width:600px) {
-.message_description{
+.testimonial__description{
    font-size: 12px;
    line-height: 22px;
 }
@@ -223,7 +223,7 @@ color: #15189A;
   }
 
 
-.messenger_name{
+.testimonial__name{
 color: #15189A;
 font-size: 12px;
 line-height: 22px;
@@ -231,7 +231,7 @@ font-weight: bold;
 }
 
 @media screen and (max-width:600px) {
-.messenger_name{
+.testimonial__name{
    font-size: 12px;
    line-height: 22px;
 }
@@ -241,6 +241,7 @@ font-weight: bold;
 .slick-arrow{
   width: 28px;
 height: 28px;
+cursor: pointer;
 background-color: #fff;
 border: solid 1px #15189A;
 background-position: center;
