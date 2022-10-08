@@ -1,38 +1,28 @@
 $(document).ready(function () {
-  window.onresize = triggerSlideronResize;
-  function slider() {
-    $(".feature-post-slider")
-      .not(".slick-initialized")
-      .slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: true,
-        dots: false,
-        pauseOnHover: true,
-        responsive: [
-          {
-            breakpoint: 9999,
-            settings: "unslick",
-          },
-          {
-            breakpoint: 993,
-            settings: {
-              slidesToShow: 2,
-            },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-            },
-          },
-        ],
-      });
-  }
-  function triggerSlideronResize() {
-    slider();
-  }
-  slider();
+  $(".message_slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    centerPadding: "25%",
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "15%",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "10%",
+        },
+      },
+    ],
+  });
 });
