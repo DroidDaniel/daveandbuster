@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $(".message_slider").slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     cssEase: "linear",
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
@@ -18,7 +18,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           centerMode: true,
-          dots: false,
           centerPadding: "15%",
         },
       },
