@@ -56,6 +56,13 @@ border: solid 1px #15189A;
 }
 }
 
+@media screen and (max-width:380px) {
+  .message_info__detail{
+    max-width: 250px;
+    padding: 15px;
+  }
+  }
+
 
 .testimonial_img{
   max-width: 80px;
@@ -92,6 +99,13 @@ border: solid 1px #15189A;
   .message_quotation_icon{
     top: 30px;
     left: 96px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .message_quotation_icon{
+    top: 22px;
+    left: 70px;
   }
 }
 
@@ -149,8 +163,8 @@ background: transparent;
 @media screen and (max-width:768px) {
   .slick-prev{
     top: inherit;
-    bottom: -40px;
-    left: 35%;
+    bottom: -36px;
+    left: 38%;
     position: absolute;
     background-image: url('../images/prev-icon.png');
     background-repeat: no-repeat;
@@ -170,7 +184,7 @@ background: transparent;
 @media screen and (max-width:768px) {
   .slick-next{
     top: inherit;
-    bottom: -40px;
+    bottom: -36px;
     left: 50%;
   }
 }
@@ -246,6 +260,8 @@ transition: all 0.8s ease;
 
 @media screen  and (max-width:768px) {
   .slick-arrow{
+    width: 36px;
+height: 36px;
     background-color: #FF6F00;
     border: none;
   }
