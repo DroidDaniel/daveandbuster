@@ -9,9 +9,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     centerMode: true,
     centerPadding: "25%",
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    pauseOnDotsHover: false,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 600,
