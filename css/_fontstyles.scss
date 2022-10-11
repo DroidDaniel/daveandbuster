@@ -1,0 +1,42 @@
+@import "./colors";
+
+@mixin section-heading() {
+    font-family: 'dinbuster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 80px;
+    color: $orange-primary;
+    margin-bottom: 20px;
+  }
+
+
+  @mixin section-mobile-heading() {
+    font-family: 'dinbuster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 55px;
+    color: $orange-primary;
+    margin-bottom: 15px;
+  }
+
+
+  @mixin general-body-text() {
+    font-family: 'franklingothic urw';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.3px;
+    color: $gray-1;
+  }
+
+  @mixin general-body-text-mobile() {
+    font-family: 'franklingothic urw';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+    color: $gray-1;
+  }

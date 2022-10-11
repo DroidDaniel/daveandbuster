@@ -1,0 +1,142 @@
+.gallery_section {
+	width: 88%;
+	max-width: 1000px;
+	margin: 40px auto;
+}
+.gallery_header {
+	margin: 0 0 45px 0;
+	max-width: 760px;
+}
+.gallery_title {
+	@include section-heading();
+}
+.gallery_description {
+	@include general-body-text();
+}
+.grid_gallery {
+  @include grid();
+	-ms-grid-columns: 1fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 25px;
+	grid-auto-rows: auto;
+	width: 88%;
+	max-width: 1000px;
+	margin: 40px auto;
+	.grid_gallery_photo_container {
+		img {
+			width: 100%;
+			border-radius: 10px;
+		}
+	}
+}
+.grid_gallery_photo_container {
+	grid-column: auto / span 2;
+	&:nth-child(1) {
+		grid-column: auto / span 3;
+	}
+	&:nth-child(2) {
+		grid-column: auto / span 3;
+	}
+}
+.slick-arrow {
+	width: 46px;
+	height: 46px;
+  @include transition(all 1s ease);
+	background-color: $orange-primary;
+	background-position: center;
+	border-radius: 50%;
+	color: $color_transparent;
+	width: 46px;
+	height: 46px;
+	background-color: $orange-primary;
+	background-position: center;
+	border-radius: 50%;
+	color: $color_transparent;
+	border: none;
+  @include boxshadow(0 0 4px #999);
+	outline: none;
+	background-position: center;
+	&:active {
+		background-image: -o-radial-gradient($orange-transparent, $blue3, $blue1);
+		background-image: radial-gradient($orange-transparent, $blue3, $blue1);
+		background-size: 100%;
+	}
+}
+.slick-prev {
+	bottom: -60px;
+	left: 25px;
+	position: absolute;
+	background-image: url('../images/prev-icon.png');
+	background-repeat: no-repeat;
+	border: none;
+	&:active {
+		background-position: left;
+	}
+}
+.slick-next {
+	bottom: -60px;
+	left: 85px;
+	position: absolute;
+	background-image: url('../images/next-icon.png');
+	background-repeat: no-repeat;
+	border: none;
+	&:active {
+		background-position: right;
+	}
+}
+.slick-disabled {
+	opacity: 0.8;
+	pointer-events: none;
+}
+.ripple {
+	&:hover {
+		background: $orange-primary -o-radial-gradient(circle, transparent 1%, $orange-primary 1%) center/15000%;
+		background: $orange-primary radial-gradient(circle, transparent 1%, $orange-primary 1%) center/15000%;
+	}
+}
+@include for-phone-only {
+	.gallery_title {
+		@include section-mobile-heading();
+	}
+	.gallery_description {
+		@include general-body-text-mobile();
+	}
+	.grid_gallery {
+		padding-left: 10px;
+		width: 100%;
+	}
+	.grid_gallery_photo_container {
+		padding: 0 20px;
+	}
+	.slick-list {
+		padding: 0 30% 0 0 !important;
+	}
+}
+@include for-phone-portrait {
+	.grid_gallery {
+		width: 100%;
+		padding-left: 0;
+	}
+}
+@include for-phone-landscape {
+	.grid_gallery {
+		.grid_gallery_photo_container {
+			img {
+				max-width: 359px;
+				height: 250px;
+				@include objectFit(cover);
+			}
+		}
+	}
+}
+@include for-phone-portrait {
+	.grid_gallery {
+		.grid_gallery_photo_container {
+			img {
+				max-width: 259px;
+				height: 200px;
+				@include objectFit(cover);
+			}
+		}
+	}
+}

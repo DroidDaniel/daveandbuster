@@ -1,0 +1,42 @@
+$small-screen: 600px;
+$exstrasmall-screen:420px;
+
+@mixin grid(){
+    display: -ms-grid;
+	display: grid;
+}
+
+@mixin objectFit($size){
+    -o-object-fit: $size;
+	object-fit: $size;
+}
+
+@mixin transition($timing) {
+    -webkit-transition: $timing;
+	-o-transition: $timing;
+	transition: $timing;
+}
+
+@mixin boxshadow($depth){
+    -webkit-box-shadow: $depth;
+	box-shadow: $depth;
+}
+
+  @mixin for-phone-only {
+	@media (max-width: #{$small-screen}) {
+	  @content;
+	}
+  }
+
+@mixin for-phone-portrait {
+	@media (max-width: #{$exstrasmall-screen}) {
+	  @content;
+	}
+  }
+
+
+  @mixin for-phone-landscape {
+	@media (min-width: #{$exstrasmall-screen + 1}) and (max-width: #{$small-screen}) {
+	  @content;
+	}
+  }
