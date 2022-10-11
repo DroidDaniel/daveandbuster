@@ -8,7 +8,7 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 1,
     centerMode: true,
-    centerPadding: "25%",
+    centerPadding: "30%",
     pauseOnHover: true,
     responsive: [
       {
