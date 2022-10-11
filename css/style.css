@@ -43,7 +43,6 @@
 	padding: 20px 20px 20px 0;
 	margin: 10px;
 	border-radius: 25px;
-	position: relative;
 	border: solid 1px #15189A;
 }
 
@@ -54,7 +53,6 @@
 		margin: 0 auto;
 		padding: 20px;
 		border-radius: 25px;
-		position: relative;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
@@ -72,7 +70,6 @@
 		margin: 0 auto;
 		padding: 20px;
 		border-radius: 25px;
-		position: relative;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
@@ -96,7 +93,7 @@
 	height: 80px;
 	-o-object-fit: cover;
 	object-fit: cover;
-	margin: 30px 0 10px 0;
+	margin: 30px auto 10px auto;
 }
 
 @media screen and (max-width:600px) {
@@ -105,42 +102,46 @@
 	}
 }
 
+.testimonial_message{
+  position: relative;
+}
+
 .testimonial_person {
 	padding: 0 30px;
 	text-align: center;
+  width:70%;
 }
 
 @media screen and (max-width:600px) {
 	.testimonial_person {
+    width: auto;
 		margin-bottom: 30px;
 	}
 }
 
 .testimonial__quotation_icon {
 	position: absolute;
-	top: 27px;
-	left: 110px;
+	top: 8px;
+	left: -50px;
 	width: 18px;
 }
 
 @media screen and (max-width:600px) {
 	.testimonial__quotation_icon {
-		top: 30px;
-		left: 96px;
+		top: 0px;
+		left: 180px;
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
 	}
 }
 
-@media screen and (max-width:380px) {
-	.testimonial__quotation_icon {
-		top: 22px;
-		left: 70px;
-	}
-}
 
 .testimonial_stars {
-	font-size: 12px;
+	font-size: 14px;
 	color: #15189A;
 }
+
 
 
 .testimonial__description {
@@ -211,8 +212,8 @@
 }
 
 .testimonial__description {
-	font-size: 12px;
-	line-height: 22px;
+	font-size: 16px;
+	line-height: 26px;
 	color: #15189A;
 }
 
@@ -240,17 +241,11 @@
 
 .testimonial__name {
 	color: #15189A;
-	font-size: 12px;
-	line-height: 22px;
+	font-size: 14px;
+	line-height: 24px;
 	font-weight: bold;
 }
 
-@media screen and (max-width:600px) {
-	.testimonial__name {
-		font-size: 12px;
-		line-height: 22px;
-	}
-}
 
 /***********Ripple effect**************/
 .testimonial_section .slick-arrow {
