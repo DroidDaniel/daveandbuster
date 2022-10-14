@@ -1,9 +1,3 @@
-* {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
 /*********************How we do Section*********************/
 .message_container {
 	font-family: Arial;
@@ -88,7 +82,7 @@
 }
 
 .message_section .slick-slide {
-	background: transparent;
+	background: rgba(0, 0, 0, 0);
 }
 
 
