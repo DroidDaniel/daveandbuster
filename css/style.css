@@ -5,31 +5,63 @@
 }
 
 /******************Reservation Form*******************/
+.find_table_section{
+  background-color: #15189A;
+  background-image: url("../images/find-table-bg.png"); /* The image used */
+  height: 100vh; /* You must set a specified height */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.find_table__wrapper{
+    padding: 140px 0 0 250px;
+}
+
+@media screen and (max-width:768px) {
+    .find_table__wrapper{
+       max-width: 300px;
+       margin:  0 auto;
+       padding: 50px 0 0 0;
+    }
+}
+
 .reservation_container{
     width: 100%;
-    max-width: 260px;
+    max-width: 400px;
     background-color: #fff;
     border: solid 1px #d8d9db;
-    /***below two line should be remove***/
-    border-radius: 10px;
-    margin: 40px auto;
+    border-radius: 12px;
+}
+
+
+@media screen and (max-width:768px) {
+    .reservation_container{
+       max-width: 300px;
+    }
 }
 
 
 .reservation_container__innerwrapper{
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     margin: 0 auto;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
+}
+
+@media screen and (max-width:768px) {
+    .reservation_container__innerwrapper{
+       max-width: 250px;
+    }
 }
 
 .reservation__form_title{
-    font-size:16px;
-    line-height: 22px;
+    font-size:18px;
+    line-height: 28px;
     font-weight: bold;
     color: #2d333f;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .reservation__form_fields select,
@@ -93,7 +125,13 @@ optgroup {
 }
 
 .date__field{
-    max-width: 128px;
+    max-width: 228px;
+}
+
+@media screen and (max-width:768px) {
+    .date__field{
+        max-width: 178px;
+    }
 }
 
 .date__field:focus{
@@ -461,11 +499,18 @@ optgroup {
 
 /********datepicker custom css*********/
 #ui-datepicker-div{
-    max-width: 170px !important;
+    max-width: 300px !important;
     height: 290px !important;
     background-color: #f1f2f4;
     padding: 0 15px !important;
 }
+
+@media screen and (max-width:768px) {
+    #ui-datepicker-div{
+        max-width: 220px !important;
+    }
+}
+
 .ui-datepicker table{
     background-color: #f1f2f4 !important;
 }
