@@ -65,31 +65,34 @@
 }
 
 .slick-next{
-  right: -12px;
-  bottom: 60%;
+  top: 95%;
+  left: 50px;
   background-image: url(../images/next-icon.png);
-  background-repeat: no-repeat;
+background-repeat: no-repeat;
 }
 
-@media screen and (max-width:768px) {
+
+@media screen and (min-width:768px) {
   .slick-next{
-    top: 95%;
-    left: 50px;
-  } 
+    right: -12px;
+    left:inherit;
+    top: 34%;
+  }   
 }
 
+.slick-prev{
+  top: 95%;
+  left: 15px;
+  background-image: url(../images/prev-icon.png);
+  background-repeat: no-repeat;
+} 
+
+@media screen and (min-width:768px) {
 .slick-prev {
   top: 34%;
   left: 15px;
-  z-index: 1;
-  background-image: url(../images/prev-icon.png);
-  background-repeat: no-repeat;
+  z-index: 1;  
 }
-
-@media screen and (max-width:768px) {
-  .slick-prev{
-    top: 95%;
-  } 
 }
 
 .slick-disabled {
