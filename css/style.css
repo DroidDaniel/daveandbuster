@@ -1,247 +1,98 @@
-/*********************How we do Section*********************/
-.message_container {
-	font-family: Arial;
-	width: 100%;
-	display: block;
-	margin: 0 auto;
+.game_slider {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
 }
 
-.message_container_title {
-	font-size: 45px;
-	line-height: 1.2;
-	color: #15189A;
-	font-weight: bold;
-	text-align: center;
-	padding: 30px 0;
+.slick-list{padding:0 20% 0 0 !important;}
+
+.game_slider__img_wrapper{
+  padding: 0 10px;
 }
 
-@media screen and (max-width:600px) {
-	.message_container_title {
-		font-size: 32px;
-	}
+@media screen and (min-width:768px) {
+  .game_slider__img_wrapper{
+    padding: 0 30px;
+  } 
 }
 
-.message_info {
-	padding: 30px 0 20px 0;
+.game_slider__img_wrapper img{
+  width: 100%;
+  max-width: 420px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
-.message_info__detail {
-	max-width: 400px;
-	margin: 0 auto;
-	padding: 30px;
-	margin: 10px;
-	border-radius: 25px;
-	position: relative;
+.game_slider__slide_title{
+  text-align: center;
+  font-family: 'Franklin Gothic';
+  font-size: 30px;
+  line-height: 30px;
+  margin: 20px 0;
+  color: #15189A;
 }
 
-.message_info__detail::before {
-	content: '';
-	width: 100%;
-	height: 100%;
-	border: solid 1px #FF6F00;
-	position: absolute;
-	left: -10px;
-	top: -10px;
-	border-radius: 25px;
-	z-index: -1;
+.game_slider__info{
+  max-width: 420px;
+}
+
+
+.game_slider__slide_describtion{
+  text-align: center;
+  font-family: 'Franklin Gothic Book';
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+  color: #585757;
+}
+
+.slick-arrow{
+  position: absolute;
+  width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background-color: #FF6F00;
+    border: solid 1px #fff;
+    background-position: center;
+    border-radius: 50%;
+    color: transparent;
+    transition: all .2s ease;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    background-position: center;
+    transition: all 0.8s ease;
+}
+
+.slick-next{
+  right: -12px;
+  bottom: 60%;
+  background-image: url(../images/next-icon.png);
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width:768px) {
-	.message_info__detail {
-		max-width: 200px;
-		margin: 0 auto;
-		padding: 30px;
-		border-radius: 25px;
-		position: relative;
-	}
+  .slick-next{
+    top: 95%;
+    left: 50px;
+  } 
 }
 
-@media screen and (max-width:420px) {
-	.message_info__detail {
-		max-width: 190px;
-		padding: 20px;
-	}
+.slick-prev {
+  top: 34%;
+  left: 15px;
+  z-index: 1;
+  background-image: url(../images/prev-icon.png);
+  background-repeat: no-repeat;
 }
 
-@media screen and (max-width:360px) {
-	.message_info__detail {
-		max-width: 170px;
-		padding: 15px;
-	}
+@media screen and (max-width:768px) {
+  .slick-prev{
+    top: 95%;
+  } 
 }
 
-.message_description {
-	margin: 15px 0 20px 0;
-}
-
-
-.message_section .slick-current.slick-active .message_info__detail {
-	background-image: -o-linear-gradient(top, #FF6F00 0%, #FFCB05 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#FF6F00), to(#FFCB05));
-	background-image: linear-gradient(180deg, #FF6F00 0%, #FFCB05 100%);
-}
-
-.message_section .slick-slide {
-	background: rgba(0, 0, 0, 0);
-}
-
-
-/*************How we do slider only mobile***************/
-.message_section .slick-arrow {
-	width: 46px;
-	height: 46px;
-	background-color: #15189A;
-	background-position: center;
-	border-radius: 50%;
-	color: transparent;
-	-webkit-transition: all .2s ease;
-	-o-transition: all .2s ease;
-	transition: all .2s ease;
-	display: none !important;
-}
-
-@media screen and (max-width:600px) {
-	.message_section .slick-arrow {
-		display: block !important;
-	}
-}
-
-.message_section .slick-prev {
-	bottom: -40px;
-	left: 35%;
-	position: absolute;
-	background-image: url('../images/prev-icon.png');
-	background-repeat: no-repeat;
-	border: none;
-}
-
-.message_section .slick-next {
-	bottom: -40px;
-	left: 50%;
-	position: absolute;
-	background-image: url('../images/next-icon.png');
-	background-repeat: no-repeat;
-	border: none;
-}
-
-.message_section .slick-disabled {
-	opacity: 0.8;
-	pointer-events: none;
-}
-
-.message_description {
-	font-size: 20px;
-	line-height: 30px;
-	color: #15189A;
-}
-
-
-@media screen and (max-width:600px) {
-	.message_description {
-		font-size: 16px;
-		line-height: 26px;
-	}
-}
-
-.messenger_name {
-	color: #15189A;
-	font-size: 20px;
-	line-height: 30px;
-	font-weight: bold;
-}
-
-@media screen and (max-width:600px) {
-	.messenger_name {
-		font-size: 16px;
-		line-height: 26px;
-	}
-}
-
-/***********Ripple effect**************/
-.message_section .slick-arrow {
-	width: 46px;
-	height: 46px;
-	background-color: #15189A;
-	background-position: center;
-	border-radius: 50%;
-	color: transparent;
-	-webkit-transition: all .2s ease;
-	-o-transition: all .2s ease;
-	transition: all .2s ease;
-	border: none;
-	-webkit-box-shadow: 0 0 4px #999;
-	box-shadow: 0 0 4px #999;
-	outline: none;
-	background-position: center;
-	-webkit-transition: all 0.8s ease;
-	-o-transition: all 0.8s ease;
-	transition: all 0.8s ease;
-}
-
-.message_section .ripple:hover {
-	background: #FF6F00 -o-radial-gradient(circle, transparent 1%, #FF6F00 1%) center/15000%;
-	background: #FF6F00 radial-gradient(circle, transparent 1%, #FF6F00 1%) center/15000%;
-}
-
-.message_section .slick-arrow:active {
-	background-image: -o-radial-gradient(rgb(220, 104, 36), #643567, #211d92);
-	background-image: radial-gradient(rgb(220, 104, 36), #643567, #211d92);
-	background-size: 100%;
-}
-
-.message_section .slick-prev:active {
-	background-position: left;
-}
-
-.message_section .slick-next:active {
-	background-position: right;
-}
-
-.message_section .slick-dots {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	margin: 0;
-	padding: 1rem 0;
-	list-style-type: none;
-}
-
-.message_section .slick-dots button {
-	display: block;
-	width: 3rem;
-	height: .8rem;
-	padding: 0;
-	border: none;
-	background-color: #15189A;
-	text-indent: -9999px;
-}
-
-
-.message_section .slick-dots li:nth-child(1) button {
-	border-radius: 10px 0 0 10px;
-}
-
-.message_section .slick-dots li:last-child button {
-	border-radius: 0 10px 10px 0;
-}
-
-.message_section .slick-dots li.slick-active button {
-	background-color: #fff;
-	border: solid 1px #15189A;
-	border-radius: 10px;
-}
-
-.message_section .slick-dots li.slick-active {
-	background-color: #15189A;
-}
-
-.message_section .slick-dots li:nth-child(1).slick-active {
-	border-radius: 10px 0 0 10px;
-}
-
-.message_section .slick-dots li:last-child.slick-active {
-	border-radius: 0 10px 10px 0;
+.slick-disabled {
+  opacity: 0;
+  pointer-events:none;
 }
