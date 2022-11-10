@@ -1,19 +1,19 @@
 $(document).ready(function () {
-  var $carousel = $(".game_slider");
+  var $carousel = $(".related_post");
 
   var settings = {
     dots: false,
-    arrows: true,
-    autoplay: true,
+    arrows: false,
+    autoplay: false,
     slide: ".slick-slideshow__slide",
-    slidesToShow: 2,
-    infinite: false,
+    slidesToShow: 3,
+    infinite: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          infinite: true,
+          arrows: true,
         },
       },
     ],
