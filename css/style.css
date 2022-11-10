@@ -4,7 +4,7 @@
   padding: 60px 0;
 }
 
-.slick-list{padding:0 20% 0 0 !important;}
+.game_slider .slick-list{padding:0 20% 0 0 !important;}
 
 .game_slider__img_wrapper{
   padding: 0 10px;
