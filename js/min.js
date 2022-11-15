@@ -1,10 +1,12 @@
 $(document).ready(function () {
   $(".play_video_btn").click(function () {
-    var showVideoContainer = $(this).next(".video_modal_container");
+    var showVideoContainer = $(this).next(
+      ".blog_landing_video_modal_container"
+    );
     var playVideo = $(this)
-      .next(".video_modal_container")
+      .next(".blog_landing_video_modal_container")
       .parent()
-      .find(".video_modal__source")
+      .find(".blog_landing_video_modal__source")
       .children();
     $(showVideoContainer).addClass("show");
     $(playVideo).trigger("play");
